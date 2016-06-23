@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:text="@string/flashlight"
         android:textSize="40sp"
+        android:typeface="monospace"
         android:textColor="@color/colorPrimary"
         android:gravity="center"
         android:textStyle="bold"
@@ -29,9 +30,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/monir_hossain"
+        android:typeface="monospace"
         android:textSize="15sp"
         android:paddingRight="3dp"
-        android:gravity="right"
+        android:gravity="center"
         android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
