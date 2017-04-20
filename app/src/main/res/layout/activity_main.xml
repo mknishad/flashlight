@@ -3,37 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground"
     tools:context="com.example.nishad.flashlight.MainActivity">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/flashlight"
-        android:textSize="40sp"
-        android:typeface="monospace"
-        android:textColor="#00AEE5"
-        android:gravity="center"
-        android:textStyle="bold"
-        android:layout_marginTop="40dp"/>
 
     <ImageButton
         android:id="@+id/imageButton"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:src="@drawable/off"
         android:layout_centerVertical="true"
         android:scaleType="center"
         android:background="@color/colorBackground"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/monir_hossain"
-        android:typeface="monospace"
-        android:textSize="15sp"
-        android:paddingRight="3dp"
-        android:gravity="center"
-        android:layout_alignParentBottom="true"/>
 
 </RelativeLayout>
