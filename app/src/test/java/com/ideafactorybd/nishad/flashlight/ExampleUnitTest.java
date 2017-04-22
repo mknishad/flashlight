@@ -1,4 +1,4 @@
-package com.example.nishad.flashlight;
+package com.ideafactorybd.nishad.flashlight;
 
 import org.junit.Test;
 

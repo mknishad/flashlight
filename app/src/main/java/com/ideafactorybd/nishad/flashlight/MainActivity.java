@@ -1,4 +1,4 @@
-package com.example.nishad.flashlight;
+package com.ideafactorybd.nishad.flashlight;
 
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
@@ -11,13 +11,17 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageButton;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton imageButton;
-    Camera camera;
-    Camera.Parameters parameters;
-    boolean isFlash = false;
-    boolean isOn = false;
+    private ImageButton imageButton;
+    private Camera camera;
+    private Camera.Parameters parameters;
+    private boolean isFlash = false;
+    private boolean isOn = false;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,11 @@ public class MainActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
+        mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder()
+                .build();
+        mAdView.loadAd(adRequest);
 
         imageButton = (ImageButton) findViewById(R.id.imageButton);
 
@@ -80,5 +89,29 @@ public class MainActivity extends AppCompatActivity {
             camera.release();
             camera = null;
         }
+    }
+
+    @Override
+    public void onPause() {
+        if (mAdView != null) {
+            mAdView.pause();
+        }
+        super.onPause();
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        if (mAdView != null) {
+            mAdView.resume();
+        }
+    }
+
+    @Override
+    public void onDestroy() {
+        if (mAdView != null) {
+            mAdView.destroy();
+        }
+        super.onDestroy();
     }
 }
