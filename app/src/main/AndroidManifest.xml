@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-  package="com.ideafactorybd.nishad.flashlight">
+  package="com.ideafactorybd.flashlight">
 
   <uses-permission android:name="android.permission.CAMERA" />
   <uses-feature android:name="android.hardware.Camera" />
@@ -12,7 +12,7 @@
     android:supportsRtl="true"
     android:theme="@style/AppTheme">
 
-    <activity android:name="com.ideafactorybd.nishad.flashlight.MainActivity">
+    <activity android:name="com.ideafactorybd.flashlight.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
 

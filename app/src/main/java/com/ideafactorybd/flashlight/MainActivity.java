@@ -1,4 +1,4 @@
-package com.ideafactorybd.nishad.flashlight;
+package com.ideafactorybd.flashlight;
 
 import android.content.DialogInterface;
 import android.content.pm.PackageManager;
