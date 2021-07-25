@@ -3,7 +3,7 @@
   xmlns:tools="http://schemas.android.com/tools"
   android:layout_width="match_parent"
   android:layout_height="match_parent"
-  tools:context="com.ideafactorybd.nishad.flashlight.MainActivity">
+  tools:context="com.ideafactorybd.flashlight.MainActivity">
 
   <ImageButton
     android:id="@+id/imageButton"
