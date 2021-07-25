@@ -5,12 +5,9 @@
   android:layout_height="match_parent"
   tools:context="com.ideafactorybd.flashlight.MainActivity">
 
-  <ImageButton
-    android:id="@+id/imageButton"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_centerVertical="true"
-    android:background="@color/colorBackground"
-    android:scaleType="center"
-    android:src="@drawable/off" />
+  <androidx.appcompat.widget.SwitchCompat
+    android:id="@+id/flashSwitch"
+    android:layout_centerInParent="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"/>
 </RelativeLayout>

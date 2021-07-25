@@ -4,7 +4,7 @@ android {
   compileSdkVersion 30
   defaultConfig {
     applicationId 'com.ideafactorybd.flashlight'
-    minSdkVersion 21
+    minSdkVersion 23
     targetSdkVersion 30
     versionCode 1
     versionName "1.0"
@@ -14,8 +14,6 @@ android {
       minifyEnabled false
       proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
     }
-  }
-  productFlavors {
   }
 }
 
